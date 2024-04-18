@@ -49,6 +49,7 @@ In this part I only share the configurations of the best resulted experiments;
     early_stopping = 10
     loss_function = Binary Cross Entropy
     activation_function = ReLU
+    activation_function_in_last_layer = Sigmoid
     drop_rate = 0.2
     learning_rate_scheduler = get_linear_schedule_with_warmup (from Transformers library)
 
