@@ -1,6 +1,6 @@
 # Sentiment-Analysis-For-IMDB-Reviews
 
-Main goal of this project is to make sentiment analysis to IMDB reviews dataset. BERT model is used for the task. Codes are written with PyTorch framework.
+Main goal of this project is to make sentiment analysis to IMDB reviews dataset. BERT model is used for the task. Codes are written with PyTorch framework. The notebook with the best resulted experiment is shared in the repository.
 
 ## Data
 
@@ -88,7 +88,7 @@ Results with different hidden sizes:
 
 
 
-With the best setup, F1 score was 84% with the following confusion matrix:
+Here is the best resulted confusion matrix, F1 score is 84%:
 
 ![alt text](https://github.com/yunsemr/Sentiment-Analysis-For-IMDB-Reviews/blob/main/IMDB_Sentiment_Analysis/confusion_matrix.png?raw=true)  
 
@@ -103,11 +103,11 @@ One of the other problem during the project was limited GPU access therefore, I 
 Also, one of the most creative solutions to improve F1 score was cropping the text data from middle with a token size which is able to work with BERT model and used the data I cropped from the original text. I read this solutions on internet. However, this method did not improve the results suprisingly. Actually, I understand the method that I read while writing these words. I guess, instead of using cropped data from the original text, truncating the data from the middle of the original text and use remaning part after truncation with a suitable size for BERT was the suggestion. Therefore, this method can be used for improvement of the results.
 
 
-On the other hand, I just changed parameters such as leaning rate by hand with a limited values therefore, hyperparameter tunining can be applied for better results. Also, using different and larger models such as larger BERT model ("bert-large-uncased") would be helpful since the F1 score is stuck in a range between 80%-84% during the experiments. Apart from these methods, using different train-validation-test split size, using more data or weight initilization techniques can be applied to improve the results.
+On the other hand, I just changed parameters such as learning rate by hand with a limited values therefore, hyperparameter tunining can be applied for better results. Also, using different and larger models such as larger BERT model ("bert-large-uncased") would be helpful since the F1 score is stuck in a range between 80%-84% during the experiments. Apart from these methods, using different train-validation-test split sizes, using more data or weight initilization techniques can be applied to improve the results.
 
 ## Conclusion
 
-Aimed to make sentiment analysis for the IMDB reviews dataset. Preprocessed the dataset and cleaned from unnecessary elements for tokenization and tokenized by usind pre-trained BERT tokenizer. After data preprocessing, different configurations and architectures are used with pre-trained BERT model for training experiments and got 84% as the highest F1 score on the test set. Fnally, mentioned about the problems during the project and some suggestions to improve the model performance are given.
+Aimed to make sentiment analysis for the IMDB reviews dataset. Preprocessed the dataset and cleaned from unnecessary elements for tokenization and tokenized by usind pre-trained BERT tokenizer. After data preprocessing, different configurations and architectures are used with pre-trained BERT model for training experiments and got 84% as the highest F1 score on the test set. Finally, mentioned about the problems during the project and some suggestions to improve the model performance are given.
 
 ## References
 
