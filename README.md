@@ -30,7 +30,7 @@ then extracted the input data and attention mask and converted them to PyTorch t
 
 ### Models, Configurations and Experiments
 
-In the model, pre-trained BERT ("bert-base-uncased") is used as the base model and added some linear layers end of it for experiments. I used Binary Cross Entropy as loss function and AdamW as optimizer. Even if I trained the model with 10 epochs, only shared the results of experiments trained with 30 epochs. Also applied early stopping with patience equals to 10.
+In the model, pre-trained BERT ("bert-base-uncased") is used as the base model and added some linear layers end of it for experiments. I used Binary Cross Entropy as loss function, AdamW as optimizer and Sigmoid function as the activation function of the last layer of the model architecture. Even if I trained the model with 10 epochs, only shared the results of experiments trained with 30 epochs. Also applied early stopping with patience equals to 10.
 
 First of all, with small epoch size, decided whether to clean stopwords or not. After running training sessions with both settings, data with stopwords performed better therefore did not clean the stopwords for the next experiments. 
 
