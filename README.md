@@ -25,7 +25,7 @@ After cleaning the text, tokenized the text data by BERT tokenizer with paramete
     return_attention_mask = True,   # Construct attention. masks.
     return_token_type_ids=False
         
-then extract the input data and attention mask then converted them to PyTorch tensor. Finally, generated a dataloader with PyTorch's DataLoader library with batch size of 32.
+then extracted the input data and attention mask and converted them to PyTorch tensor. Finally, generated a dataloader with PyTorch's DataLoader library with batch size of 32.
 
 
 ### Models, Configurations and Experiments
