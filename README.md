@@ -38,9 +38,9 @@ For experiments, different setups are used. At the beginning, I used two differe
 
 Also, I worked with different learning rate schedulers. "get_linear_schedule_with_warmup" and "ReduceLROnPlateau" techniques are used. For both scheduler, I used the architecture with hidden sizes 768-512 and learning rate 1e-3. "get_linear_schedule_with_warmup" performed slightly better.
 
-In another setups, changed the model architecure with different number of linear layers and hidden sizes. Three different architecture is used and these have 768, 768-512, 768-512-256-128-32 hidden sizes respectively in the linear layers. Also dropout with 0.2 drop rate and ReLU activation function is used in all architecures. For all these architectures, learning rate was 1e-3 and scheduler was "get_linear_schedule_with_warmup". Artchitecture with hidden size 768-512 performed slightly better in the experiments. Results and confusion matrix are shareed in the "Results" part.
+In another setups, changed the model architecure with different number of linear layers and hidden sizes. Three different architecture is used and these have 768, 768-512, 768-512-256-128-32 hidden sizes respectively in the linear layers. Also dropout with 0.2 drop rate and ReLU activation function is used in all architecures. For all these architectures, learning rate was 1e-3 and scheduler was "get_linear_schedule_with_warmup". Artchitecture with hidden size 768-512 performed slightly better in the experiments. Results and confusion matrix are shared in the "Results" part.
 
-In this part I only share the configurations of the best resulted experiments;
+In this part, I only share the configurations of the best resulted experiment;
 
     batch_size = 32
     epochs = 30
