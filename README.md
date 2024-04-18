@@ -32,7 +32,7 @@ then extracted the input data and attention mask and converted them to PyTorch t
 
 In the model, pre-trained BERT ("bert-base-uncased") is used as the base model and added some linear layers end of it for experiments. I used Binary Cross Entropy as loss function and AdamW as optimizer. Even if I trained the model with 10 epochs, only shared the experiments with 30 epochs. Also applied early stopping with patience equals to 10.
 
-For experiments, first of all, with small epoch size, decided whether to clean stopwords or not. After running training sessions with both settings, data with stopwords performed better therefore did not clean the stopwords for the next experiments. 
+First of all, with small epoch size, decided whether to clean stopwords or not. After running training sessions with both settings, data with stopwords performed better therefore did not clean the stopwords for the next experiments. 
 
 Different setups are used. At the beginning, I used two different learning rate values, 2e-5 and 1e-3. For both learning rate, I used the architecture with hidden sizes 768-512 and "get_linear_schedule_with_warmup" as learning rate scheduler. Since, model with 1e-3 performs better, I used that value in the next steps. 
 
